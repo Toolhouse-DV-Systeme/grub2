@@ -869,6 +869,7 @@ show_menu (grub_menu_t menu, int nested, int autobooted)
       if (! e)
 	continue; /* Menu is empty.  */
 
+   if (e->submenu)
       grub_cls ();
 
       if (auto_boot)
